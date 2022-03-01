@@ -1,0 +1,18 @@
+
+
+div {
+    margin: auto;
+    background-color: blueviolet;
+    border: solid 2px red;
+    padding: 10px;
+}
+div  div {
+    background-color: yellow;
+}
+
+div div div {
+    background-color: aqua;
+}
+div div p {
+    color: red;
+}
