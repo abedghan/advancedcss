@@ -1,0 +1,37 @@
+#wrapper {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse{
+    10%{transform: scale(1.1);}
+}
+#heart {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+}
+#heart::before, #heart::after{
+    position:absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background-color:red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    animation: demo 1s infinite;
+}
+@keyframes demo {
+    10% {background: blue;}
+    50%{background:green;}
+}
+#heart::after{
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    left: 0;
+}
