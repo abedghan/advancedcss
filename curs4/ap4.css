@@ -1,0 +1,6 @@
+div {
+    --mycolor: red;
+}
+p{
+color: var(--mycolor);
+}

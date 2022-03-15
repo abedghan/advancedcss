@@ -1,0 +1,40 @@
+@media (max-width : 640px) {
+    #app2 .mob{
+       display: block;
+     }
+     #app2 div:not(.mob){
+       display: none;
+     }
+   }
+   
+   
+   /* iPads (portrait and landscape) ----------- */
+   @media (min-width : 641px) and (max-width : 768px) {
+     #app2  .tab{
+       display: block;
+     }
+     #app2 div:not(.tab){
+       display: none;
+     }
+     
+   }
+   
+   /* Desktops and laptops ----------- */
+   @media (min-width : 769px) and (max-width : 1223px){
+     #app2 .lap{
+       display: block;
+     }
+     #app2 div:not(.lap){
+       display: none;
+     }
+   }
+   
+   /* Large screens ----------- */
+   @media (min-width : 1224px) {
+     #app2 .des{
+       display: block;
+     }
+     #app2 div:not(.des){
+       display: none;
+     }
+   }
